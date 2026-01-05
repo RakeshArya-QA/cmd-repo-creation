@@ -46,3 +46,4 @@ class test2{
     }
 }
 Even though both of them are valid it is not good practice because it reduces readability and creates confusion.
+

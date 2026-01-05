@@ -1,0 +1,59 @@
+                                           Reserved Words:
+In java some words are reserved to represent some meaning or functionality. Such type of words are called reserved words
+
+                                        Reserved words (53)
+                                                |
+                 ------------------------------------------------------------
+                 |                                                          |
+           Keywords (50)                                              Reserved words (3)
+                 |                                                          |- true
+     -------------------------                                              |- false
+    |                        |                                              |- null
+used keywords (48)        Unused keywords (2)
+
+***Note: This number may inc with new versions.
+
+| Data Types (8) | Flow Control (11) | Modifiers (11)   | Exception Handling (6) | Class Related (6) | Object Related (4) | Others (1) | Unused Keywords (2) |
+|----------------|-------------------|------------------|------------------------|-------------------|--------------------|------------|---------------------|
+| Byte           | if                | public           | try                    | class             | new                | void       | goto                |
+| Short          | else              | private          | catch                  | interface         | instanceof         |            | const               |
+| Int            | switch            | protected        | finally                | extends           | super              |            |                     |
+| Long           | case              | static           | throw                  | implements        | this               |            |                     |
+| Float          | default           | final            | throws                 | package           |                    |            |                     |
+| Double         | while             | abstract         | Assert (1.4V)          | import            |                    |            |                     |
+| Boolean        | do                | synchronized     |                        |                   |                    |            |                     |
+| Char           | for               | native           |                        |                   |                    |            |                     |
+|                | break             | Strictfp (1.2V)  |                        |                   |                    |            |                     |
+|                | continue          | transient        |                        |                   |                    |            |                     |
+|                | return            | volatile         |                        |                   |                    |            |                     |
+
+Void:
+In java return type is mandatory if a method wont return anything then we have to declare the method with void return type. But in C language return type is optional and default return type is int.
+
+Goto:
+Usage of created several problems in old languages and hence sun people banned this keyword in java.
+
+Const:
+Use final instead of const.
+
+Note: Goto and const are unused keywords and if we are trying to use to use then we will get compile time error.
+
+                                               Reserved Literals:
+ - True, false, null
+ Here true and false are values for boolean data type
+ Here null is default value for object reference
+
+ Enum (1.5v)
+ We can use enum to define a group of named constants
+
+ Example:
+ we can use enum to define a group of named constants
+            enum month                         enum beer
+            {                                  {
+            Jan, Feb ....., Dec;                KO, KF, RC, FO;
+            }                                  }
+
+Conclusions:
+1) All the reserved keywords in java contains only lower case alphabets.
+2) In java we have only new keyword and there is no delete keyword because destruction of useless objects is the responsibility of garbage collector.
+
