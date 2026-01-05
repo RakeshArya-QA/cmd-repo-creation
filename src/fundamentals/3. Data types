@@ -1,0 +1,73 @@
+1) In java every variable and every expression has some type.
+2) Each and every data type is clearly defined.
+3) Every assignment should be check by compiler for type compatibility.
+4) Because of above reason we can conclude that java language is strongly typed programming language.
+5) Java is not considered as pure OOP language because several OOP features are not satisfied by java like operator overloading, multiple inheritance etc.
+6) More over we are depending on primitive data types which are non objects.
+
+                                        Primitive data types (8):
+Primitive Data Types (P)
+────────────────────────
+| Category                 | Subcategory              | Data Types             |
+|--------------------------|--------------------------|------------------------|
+| Numeric Data Types       | Integral Data Types      | byte, short, int, long |
+|                          | Floating Point Data Types| float, double          |
+|                          |                          |                        |
+| Non-numeric Data Types   |                          | char, boolean          |
+
+Except boolean and char remaining data types are considered as signed data types because we can represent both positive and negative numbers
+
+Byte:
+1)The size is : 1 byte(8bits)
+2)Max_value : +127
+3)Min_Value : -128
+4)Range : -128 to 127
+Byte is best choice if we want to handle data in terms of stream either from the file or from the network(file supported form and network supported form is byte.)
+
+Short:
+1)This is the most rarely used data type in java.
+2)Size : 2 bytes (16bits)
+3)Range : -215 to 215-1 ==> [-32768 to 32767]
+Short data type is best suitable for 16 bits processor like 8085 but these processors are completely outdated and hence corresponding short data type is also out dated data type.
+
+Int:
+1)The most commonly used data type is int.
+2)Size : 4 bytes (32 bits)
+3)Range : 231 to 231-1 ==> [-2147483648 to 2147483647]
+
+Long:
+1)Sometimes int may not enough to hold big values then we should go for long type.
+Ex1: The amount of light travelled in 1000s days. To hold this value int may not be enough then we should go for long data type.
+		long l = 126000*60*60*24*1000 miles.
+Ex2: The no of present in a big file may exceed int range. Hence the return type of length() is long but not int.
+		long l = f.length();
+2)Size : 8 bytes(64 bits)
+3)Range : -263 to 263-1
+
+Note:
+All the above data types(byte, short, int, long) meant for representing integral values. If we want to represent floating point values then we should go for floating point data types.
+
+Floating Point Data Types Comparison:
+| Attribute                     | float                              | double                              |
+|------------------------------|-------------------------------------|-------------------------------------|
+| Accuracy                     | 5 to 6 decimal places               | 14 to 15 decimal places             |
+| Precision Type               | Follows Single precision            | Double precision                    |
+| Size                         | 4 bytes                             | 8 bytes                             |
+| Range                        | -3.4e38 to 3.4e38                   | -1.7e308 to 1.7e308                 |
+
+Boolean data type:
+1)Size : NA(VM dependent)
+2)Range : NA but allowed values are true or false.
+
+Char data type:
+In old languages like c and c++ are ASCII code based and the no of ASCII code characters are <256 to represent these 256 characters. 8bits are enough hence char size in old languages is 1byte.
+
+In java we are allowed to use any worldwide alphabets character and java is unicode based and no of unicode characters are >256 and <=65536 to represent all these characters 1byte is not enough. Compulsory we should go for 2bytes.
+
+Size: 2 bytes
+Range: 0 to 65535
+Ex:
+char ch1 = 97;
+char ch1 = 65536; ---> CE: possible loss of precision.
+
+Note: Null is a default value for object reference and we cant apply for primitives. If we are trying to use for primitive then we will get compile error.
